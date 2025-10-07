@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_addFloorFragment"
+            app:destination="@id/addFloorFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_viewFloorFragment"
+            app:destination="@id/viewFloorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewFloorFragment"
+        android:name="com.example.myapplication.ui.floor.ViewFloorFragment"
+        android:label="fragment_view_floor"
+        tools:layout="@layout/fragment_view_floor">
+
+        <!-- Keep this version because it contains the action -->
+        <action
+            android:id="@+id/action_viewFloorFragment_to_viewDoorFragment"
+            app:destination="@id/viewDoorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.myapplication.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+        <action
+            android:id="@+id/action_homeFragment_to_accessFragment"
+            app:destination="@id/accessFragment" />
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/confirming_for_permission"
+            app:destination="@id/devicePermissionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.myapplication.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addFloorFragment"
+        android:name="com.example.myapplication.ui.addFloor.AddFloorFragment"
+        android:label="AddFloorFragment" />
+    <fragment
+        android:id="@+id/devicePermissionsFragment"
+        android:name="com.example.myapplication.ui.devicePermission.devicePermissionsFragment"
+        android:label="cofirm_device_permission_fragment"
+        tools:layout="@layout/confirm_device_permissions" />
+
+
+    <fragment
+        android:id="@+id/viewDoorFragment"
+        android:name="com.example.myapplication.ui.floor.ViewDoorFragment"
+        android:label="fragment_view_door"
+        tools:layout="@layout/fragment_view_door" />
+
+    <fragment
+        android:id="@+id/accessFragment"
+        android:name="com.example.myapplication.ui.access.AccessFragment"
+        android:label="AccessFragment" />
+
+
+</navigation>

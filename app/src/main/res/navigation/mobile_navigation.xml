@@ -35,10 +35,16 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.example.myapplication.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
         <action
             android:id="@+id/action_homeFragment_to_accessFragment"
             app:destination="@id/accessFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_housesFragment"
+            app:destination="@id/housesFragment" />
+
+    </fragment>
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
@@ -75,6 +81,11 @@
         android:id="@+id/accessFragment"
         android:name="com.example.myapplication.ui.access.AccessFragment"
         android:label="AccessFragment" />
+    <fragment
+        android:id="@+id/housesFragment"
+        android:name="com.example.myapplication.ui.houses.HousesFragment"
+        android:label="HousesFragment"
+        tools:layout="@layout/fragment_houses" />
 
 
 </navigation>

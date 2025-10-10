@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 // Add your other top-level destination IDs from the bottom nav menu here
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        binding.navView.setupWithNavController(navController)
 
         // Default setup:
         // navView.setupWithNavController(navController) // We will replace this with custom handling

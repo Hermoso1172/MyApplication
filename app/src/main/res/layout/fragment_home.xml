@@ -90,6 +90,22 @@
                     android:layout_marginTop="20dp"
                     android:textSize="19sp"
                     android:text="First Floor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="19sp"
+                    android:text="2 Door Devices"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="110dp"
+                    android:textSize="19sp"
+                    android:text="5 Camera Devices"/>
             </androidx.cardview.widget.CardView>
 
             <Button

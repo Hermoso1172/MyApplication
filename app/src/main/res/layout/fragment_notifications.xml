@@ -67,7 +67,7 @@
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/placeholder_profile_1" />
+                    android:src="@drawable/ex_profile_two" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -115,7 +115,7 @@
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/placeholder_profile_1" />
+                    android:src="@drawable/ex_profile_three" />
 
                 <TextView
                     android:layout_width="wrap_content"

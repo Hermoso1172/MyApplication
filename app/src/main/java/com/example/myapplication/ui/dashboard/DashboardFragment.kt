@@ -48,6 +48,11 @@ class DashboardFragment : Fragment() {
 
         }
 
+        binding.houseCardLink.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_housesFragment)
+
+        }
+
 
         return root
     }

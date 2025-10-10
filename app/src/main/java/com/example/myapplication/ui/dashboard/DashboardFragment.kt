@@ -36,16 +36,21 @@ class DashboardFragment : Fragment() {
         }
 
         binding.accessCardLink.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_accessFragment)
+            findNavController().navigate(R.id.action_dashboardFragment_to_accessFragment)
 
         }
 
         binding.houseCardLink.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_housesFragment)
+            findNavController().navigate(R.id.action_dashboardFragment_to_housesFragment)
 
         }
+        binding.reportCardLink.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_reportFragment)
 
-
+        }
+//        binding.suspiousActCardLink.setOnClickListener {
+//
+//        }
         return root
     }
 

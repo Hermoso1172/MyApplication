@@ -25,7 +25,6 @@
         android:label="fragment_view_floor"
         tools:layout="@layout/fragment_view_floor">
 
-        <!-- Keep this version because it contains the action -->
         <action
             android:id="@+id/action_viewFloorFragment_to_viewDoorFragment"
             app:destination="@id/viewDoorFragment" />
@@ -37,16 +36,20 @@
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" >
         <action
-            android:id="@+id/action_homeFragment_to_accessFragment"
+            android:id="@+id/action_dashboardFragment_to_accessFragment"
             app:destination="@id/accessFragment" />
 
         <action
-            android:id="@+id/action_homeFragment_to_housesFragment"
+            android:id="@+id/action_dashboardFragment_to_housesFragment"
             app:destination="@id/housesFragment" />
 
         <action
             android:id="@+id/action_dashboardFragment_to_devicesFragment"
             app:destination="@id/devicesFragment" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
 
     </fragment>
     <fragment
@@ -109,6 +112,11 @@
         android:id="@+id/viewCameraFragment"
         android:name="com.example.myapplication.ui.camera.ViewCameraFragment"
         android:label="ViewCameraFragment" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.myapplication.ui.report.ReportFragment"
+        android:label="ReportFragment"
+        tools:layout="@layout/fragment_report" />
 
 
 </navigation>

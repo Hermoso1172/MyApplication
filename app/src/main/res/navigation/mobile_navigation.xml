@@ -15,8 +15,8 @@
             app:destination="@id/addFloorFragment" />
 
         <action
-            android:id="@+id/action_homeFragment_to_viewFloorFragment"
-            app:destination="@id/viewFloorFragment" />
+            android:id="@+id/action_homeFragment_to_devicesFragment"
+            app:destination="@id/devicesFragment" />
     </fragment>
 
     <fragment
@@ -43,6 +43,10 @@
         <action
             android:id="@+id/action_homeFragment_to_housesFragment"
             app:destination="@id/housesFragment" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_devicesFragment"
+            app:destination="@id/devicesFragment" />
 
     </fragment>
     <fragment
@@ -86,6 +90,25 @@
         android:name="com.example.myapplication.ui.houses.HousesFragment"
         android:label="HousesFragment"
         tools:layout="@layout/fragment_houses" />
+
+    <fragment
+        android:id="@+id/devicesFragment"
+        android:name="com.example.myapplication.ui.devices.DevicesFragment"
+        android:label="DevicesFragment" >
+        <action
+            android:id="@+id/action_devicesFragment_to_viewDoorFragment"
+            app:destination="@id/viewDoorFragment" />
+
+        <action
+            android:id="@+id/action_devicesFragment_to_viewCameraFragment"
+            app:destination="@id/viewCameraFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewCameraFragment"
+        android:name="com.example.myapplication.ui.camera.ViewCameraFragment"
+        android:label="ViewCameraFragment" />
 
 
 </navigation>

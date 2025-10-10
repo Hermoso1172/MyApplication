@@ -34,8 +34,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.Floor1.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_viewFloorFragment)
-
+            findNavController().navigate(R.id.action_homeFragment_to_devicesFragment)
         }
         return root
     }

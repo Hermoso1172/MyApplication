@@ -32,15 +32,7 @@ class DashboardFragment : Fragment() {
         val root: View = binding.root
 
         binding.deviceCardLink.setOnClickListener {
-            // Step 1: Navigate to the destination
-            findNavController().navigate(R.id.navigation_home)
-
-            // Step 2: Get the BottomNavigationView from the activity
-            // This assumes the BottomNavView is in your MainActivity and has the ID 'nav_view'
-            val bottomNavView = requireActivity().findViewById<BottomNavigationView>(R.id.nav_view)
-
-            // Step 3: Manually set the selected item in the menu
-            bottomNavView.selectedItemId = R.id.navigation_home
+            findNavController().navigate(R.id.action_dashboardFragment_to_devicesFragment)
         }
 
         binding.accessCardLink.setOnClickListener {

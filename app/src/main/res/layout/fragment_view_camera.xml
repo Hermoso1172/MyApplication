@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".ui.floor.ViewDoorFragment">
+    tools:context=".ui.camera.ViewCameraFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Door"
+        android:text="Camera"
         android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,20 +91,19 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:entries="@array/door_status_options"
+                android:entries="@array/camera_status_options"
                 style="@style/Widget.AppCompat.Spinner.Underlined"/>
 
-           <Button
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_marginTop="10dp"
-               android:layout_marginBottom="10dp"
-               android:gravity="left"
-               android:text="Accesss"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="Accesss"/>
 
         </LinearLayout>
     </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

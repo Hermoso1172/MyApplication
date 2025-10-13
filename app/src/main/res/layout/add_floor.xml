@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
-        android:text="Scan QR Code"
+        android:text="Connect to existing Floor"
         app:layout_constraintTop_toBottomOf="@+id/textView_title_add_floor"
         tools:layout_editor_absoluteX="16dp" />
 

@@ -51,6 +51,10 @@
             android:id="@+id/action_dashboardFragment_to_reportFragment"
             app:destination="@id/reportFragment" />
 
+        <action
+            android:id="@+id/action_dashboardFragment_to_suspiciousActFragment"
+            app:destination="@id/suspiousActFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/navigation_notifications"
@@ -117,6 +121,11 @@
         android:name="com.example.myapplication.ui.report.ReportFragment"
         android:label="ReportFragment"
         tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/suspiousActFragment"
+        android:name="com.example.myapplication.ui.suspiciousact.SuspiousActFragment"
+        android:label="SusoiciousActFragment"
+        tools:layout="@layout/fragment_suspicious_act" />
 
 
 </navigation>

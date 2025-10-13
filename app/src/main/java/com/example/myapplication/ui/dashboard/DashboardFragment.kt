@@ -48,9 +48,9 @@ class DashboardFragment : Fragment() {
             findNavController().navigate(R.id.action_dashboardFragment_to_reportFragment)
 
         }
-//        binding.suspiousActCardLink.setOnClickListener {
-//
-//        }
+        binding.suspiousActCardLink.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_suspiciousActFragment)
+        }
         return root
     }
 

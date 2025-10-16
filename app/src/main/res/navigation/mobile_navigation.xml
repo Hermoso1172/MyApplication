@@ -74,7 +74,11 @@
     <fragment
         android:id="@+id/addFloorFragment"
         android:name="com.example.myapplication.ui.addFloor.AddFloorFragment"
-        android:label="AddFloorFragment" />
+        android:label="Add Floor Fragment" >
+        <action
+            android:id="@+id/action_addFloorFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
     <fragment
         android:id="@+id/devicePermissionsFragment"
         android:name="com.example.myapplication.ui.devicePermission.devicePermissionsFragment"
